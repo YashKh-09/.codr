@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <link rel="stylesheet" href="output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..</title>
+</head>
+
+<body class="bg-[#1e1e1e] overflow-x-hidden" id="page">
+    <header class="bg-[#1e1e1e] fixed w-screen h-[20vh] z-50">
+        <nav class="flex justify-between items-center fixed top-0 left-0 backdrop-blur-xl w-screen h-[20vh] px-6">
+
+            <!-- Logo -->
+            <a href="#section_1" class="no-underline text-inherit visited:text-inherit visited:no-underline">
+                <img src="assets/logo.png" alt="" class="h-16 lg:mx-40 mt-[29px] cursor-pointer">
+            </a>
+
+            <!-- Desktop Menu (hidden on mobile) -->
+            <ul class="hidden lg:flex justify-end mx-40 mt-10 text-[#ffffff]">
+                <li class="mx-8 text-2xl manrope tracking-widest font-light cursor-pointer">
+                    <a href="#section_1" class="no-underline text-inherit visited:text-inherit visited:no-underline">
+                        Home
+                    </a>
+                </li>
+                <li class="mx-8 text-2xl manrope tracking-widest font-light cursor-pointer">
+                    <a href="#section_2" class="no-underline text-inherit visited:text-inherit visited:no-underline">
+                        Blogs
+                    </a>
+                </li>
+                <li class="mx-8 text-2xl manrope tracking-widest font-light cursor-pointer">
+                    <a href="#section_3" class="no-underline text-inherit visited:text-inherit visited:no-underline">
+                        About
+                    </a>
+                </li>
+                <li class="ml-8 text-2xl manrope tracking-widest font-light cursor-pointer">
+                    <a href="#section_4" class="no-underline text-inherit visited:text-inherit visited:no-underline">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Hamburger Button (visible only on mobile) -->
+            <button id="hamburger-btn" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none mt-4 mr-4">
+                <span id="line1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span id="line2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden absolute top-[20vh] left-0 w-full bg-[#1e1e1e] backdrop-blur-xl py-4">
+            <div class="flex flex-col items-center space-y-6 text-[#ffffff]">
+                <a href="#section_1" class="no-underline text-inherit visited:text-inherit visited:no-underline text-2xl manrope tracking-widest font-light py-2">
+                    Home
+                </a>
+                <a href="#section_2" class="no-underline text-inherit visited:text-inherit visited:no-underline text-2xl manrope tracking-widest font-light py-2">
+                    Blogs
+                </a>
+                <a href="#section_3" class="no-underline text-inherit visited:text-inherit visited:no-underline text-2xl manrope tracking-widest font-light py-2">
+                    About
+                </a>
+                <a href="#section_4" class="no-underline text-inherit visited:text-inherit visited:no-underline text-2xl manrope tracking-widest font-light py-2">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Your page content here -->
+    <main class="pt-[20vh]">
+        <!-- Your sections content -->
+    </main>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const line1 = document.getElementById('line1');
+        const line2 = document.getElementById('line2');
+
+        let isOpen = false;
+
+        hamburgerBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            
+            if (isOpen) {
+                mobileMenu.classList.remove('hidden');
+                // Transform to X
+                line1.classList.add('rotate-45', 'translate-y-1.5');
+                line2.classList.add('-rotate-45', '-translate-y-1.5');
+            } else {
+                mobileMenu.classList.add('hidden');
+                // Transform back to hamburger
+                line1.classList.remove('rotate-45', 'translate-y-1.5');
+                line2.classList.remove('-rotate-45', '-translate-y-1.5');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                line1.classList.remove('rotate-45', 'translate-y-1.5');
+                line2.classList.remove('-rotate-45', '-translate-y-1.5');
+                isOpen = false;
+            });
+        });
+    </script>
+</body>
+</html>

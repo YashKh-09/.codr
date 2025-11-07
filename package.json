@@ -1,0 +1,19 @@
+{
+  "name": "blog-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+ 
+      "scripts": {
+  "dev": "npx @tailwindcss/cli -i ./css/input.css -o ./output.css --watch",
+  "build": "npx @tailwindcss/cli -i ./css/input.css -o ./output.css --minify",
+  "try": "npx @tailwindcss/cli -i ./css/input.css -o ./output.css"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^4.1.16"
+  }
+}
