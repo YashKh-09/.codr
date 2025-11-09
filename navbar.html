@@ -1,112 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="utility.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>..</title>
+    <title>.codr</title>
 </head>
 
-<body class="bg-[#1e1e1e] overflow-x-hidden" id="page">
-    <header class="bg-[#1e1e1e] fixed w-screen h-[20vh] z-50">
-        <nav class="flex justify-between items-center fixed top-0 left-0 backdrop-blur-xl w-screen h-[20vh] px-6">
+<body class="bg-gray-950 overflow-x-hidden">
+    <header class="w-screen h-[10vh] bg-gray-950 fixed md:top-0 left-0">
 
-            <!-- Logo -->
-            <a href="#section_1" class="no-underline text-inherit visited:text-inherit visited:no-underline">
-                <img src="assets/logo.png" alt="" class="h-16 lg:mx-40 mt-[29px] cursor-pointer">
-            </a>
+        <nav>
+            <div class="flex items-center justify-between h-[10vh] p-6 md:hidden">
 
-            <!-- Desktop Menu (hidden on mobile) -->
-            <ul class="hidden lg:flex justify-end mx-40 mt-10 text-[#ffffff]">
-                <li class="mx-8 text-2xl manrope tracking-widest font-light cursor-pointer">
-                    <a href="#section_1" class="no-underline text-inherit visited:text-inherit visited:no-underline">
-                        Home
-                    </a>
-                </li>
-                <li class="mx-8 text-2xl manrope tracking-widest font-light cursor-pointer">
-                    <a href="#section_2" class="no-underline text-inherit visited:text-inherit visited:no-underline">
-                        Blogs
-                    </a>
-                </li>
-                <li class="mx-8 text-2xl manrope tracking-widest font-light cursor-pointer">
-                    <a href="#section_3" class="no-underline text-inherit visited:text-inherit visited:no-underline">
-                        About
-                    </a>
-                </li>
-                <li class="ml-8 text-2xl manrope tracking-widest font-light cursor-pointer">
-                    <a href="#section_4" class="no-underline text-inherit visited:text-inherit visited:no-underline">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+                <a href="#home" class="w-[30vw] inline"><img src="assets/logo.png" alt=""
+                        class="max-w-[21%] min-w-32 cursor-pointer"></a>
 
-            <!-- Hamburger Button (visible only on mobile) -->
-            <button id="hamburger-btn" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none mt-4 mr-4">
-                <span id="line1" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
-                <span id="line2" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
-            </button>
+                <div class="flex flex-col gap-2  pt-4 ">
+                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
+                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="justify-between items-center h-[10vh] mx-10 hidden md:flex lg:mx-16">
+
+                <a href="#home"><img src="assets/logo.png" alt="" class="w-36 cursor-pointer xl:w-40"></a>
+
+                <div
+                    class="text-[#dbdbdb] w-[50vw] text-[1.20rem] lg:text-[129%] lg:w-[40vw]  xl:text-[129%] xl:w-[32vw] pt-4">
+                    <ul class="flex justify-between gap-x-[10%] nunito ">
+
+                        <li class="">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#blog">My works</a>
+                        </li>
+                        <li class="">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="">
+                            <a href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
 
         </nav>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="lg:hidden hidden absolute top-[20vh] left-0 w-full bg-[#1e1e1e] backdrop-blur-xl py-4">
-            <div class="flex flex-col items-center space-y-6 text-[#ffffff]">
-                <a href="#section_1" class="no-underline text-inherit visited:text-inherit visited:no-underline text-2xl manrope tracking-widest font-light py-2">
-                    Home
-                </a>
-                <a href="#section_2" class="no-underline text-inherit visited:text-inherit visited:no-underline text-2xl manrope tracking-widest font-light py-2">
-                    Blogs
-                </a>
-                <a href="#section_3" class="no-underline text-inherit visited:text-inherit visited:no-underline text-2xl manrope tracking-widest font-light py-2">
-                    About
-                </a>
-                <a href="#section_4" class="no-underline text-inherit visited:text-inherit visited:no-underline text-2xl manrope tracking-widest font-light py-2">
-                    Contact
-                </a>
-            </div>
-        </div>
     </header>
 
-    <!-- Your page content here -->
-    <main class="pt-[20vh]">
-        <!-- Your sections content -->
+    <main class="pt-[10vh] px-6 md:px-10 lg:px-16">
+
+        <section id="home"
+            class="h-[90vh] flex items-center justify-center flex-col gap-7 xl:grid xl:grid-cols-2 xl:grid-rows-[auto_auto_10%] gap-x-16 xl:place-items-center">
+
+            <div
+                class="text-[#dbdbdb] text-[clamp(1.25rem,5vw,1.875rem)] font-light montserrat text-center flex flex-col md:flex-row md:gap-2.5 md:text-[clamp(1.875rem,4vw,2.2rem)] xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-end-2 xl:items-center xl:justify-center xl:text-[clamp(1rem,2.5vw,2.875rem)]">
+                NAMASTE! I AM
+                <div class="text-[#83497d]">
+                    YASH KHANDELWAL
+                </div>
+            </div>
+
+            <img src="assets/programming-background-with-person-working-with-codes-computer.jpg" alt=""
+                class="rounded-4xl max-w-xs w-full xl:col-start-2 xl:col-end-3 xl:row-start-1 xl:row-end-2 xl:max-w-lg">
+                
+                <div
+                class="text-[clamp(1rem,1vw,1.2rem)] font-light text-[#dbdbdb] text-center montserrat md:max-w-4xl md:w-full  xl:col-start-2 xl:col-end-3 xl:row-start-2 xl:row-end-3 xl:xl:self-start xl:text-[clamp(1.2rem,1.5vw,1.6rem)] xl:pt-10">
+                I’m a frontend developer passionate about building meaningful projects and growing through learning.
+                This site is where I share my work, experiments, and takeaways.
+            </div>
+            <img src="assets/image2.jpg" alt=""
+                class="rounded-4xl max-w-xs w-full xl:col-start-1 xl:col-end-2 xl:row-start-2 xl:row-end-3 xl:max-w-lg">
+            <a href="https://github.com/yourusername" target="_blank"
+                class="bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-colors flex items-center gap-2 justify-center px-[clamp(1.5rem,4vw,2.7rem)] py-[clamp(0.75rem,2vw,1.2rem)] text-[clamp(1rem,3vw,1.3rem)]  xl:col-start-1 xl:col-end-3  xl:row-start-3 xl:row-end-4 xl:-10">
+                <svg class="w-[clamp(1.25rem,3vw,1.5rem)] h-[clamp(1.25rem,3vw,1.5rem)]" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                My GitHub
+            </a>
+
+        </section>
+
     </main>
 
-    <script>
-        const hamburgerBtn = document.getElementById('hamburger-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const line1 = document.getElementById('line1');
-        const line2 = document.getElementById('line2');
 
-        let isOpen = false;
-
-        hamburgerBtn.addEventListener('click', () => {
-            isOpen = !isOpen;
-            
-            if (isOpen) {
-                mobileMenu.classList.remove('hidden');
-                // Transform to X
-                line1.classList.add('rotate-45', 'translate-y-1.5');
-                line2.classList.add('-rotate-45', '-translate-y-1.5');
-            } else {
-                mobileMenu.classList.add('hidden');
-                // Transform back to hamburger
-                line1.classList.remove('rotate-45', 'translate-y-1.5');
-                line2.classList.remove('-rotate-45', '-translate-y-1.5');
-            }
-        });
-
-        // Close mobile menu when clicking on a link
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                line1.classList.remove('rotate-45', 'translate-y-1.5');
-                line2.classList.remove('-rotate-45', '-translate-y-1.5');
-                isOpen = false;
-            });
-        });
-    </script>
 </body>
+
 </html>
