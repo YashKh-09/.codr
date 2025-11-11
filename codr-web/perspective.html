@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden scroll-smooth">
+
+<head>
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective - .codr</title>
+</head>
+
+<body class="bg-gray-950 overflow-x-hidden">
+    <!-- Same Navigation -->
+    <header class="w-screen h-[10vh] fixed md:top-0 left-0 z-100">
+        <nav class="">
+            <div class="flex items-center justify-between h-[10vh] px-6 md:hidden bg-gray-950">
+                <a href="/" class="w-[30vw] inline">
+                    <img src="/assets/logo.png" alt="" class="max-w-[21%] min-w-32 cursor-pointer">
+                </a>
+                <div class="flex flex-col gap-2 pt-4">
+                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
+                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="justify-between items-center h-[10vh] px-16 hidden md:flex bg-gray-950">
+                <a href="/">
+                    <img src="/assets/logo.png" alt="" class="w-40 cursor-pointer 2xl:w-44">
+                </a>
+                <div class="text-[#dbdbdb] w-[50vw] text-lg lg:w-[40vw] xl:w-[32vw] pt-4">
+                    <ul class="flex justify-between gap-x-[10%] nunito">
+                        <li><a href="/" class="hover:text-[#83497d] transition-colors duration-300">Home</a>
+                        </li>
+                        <li><a href="/Projects & Builds" class="hover:text-[#83497d] transition-colors duration-300">Projects
+                                & Builds</a></li>
+                        <li><a href="/Lessons"
+                                class="hover:text-[#83497d] transition-colors duration-300">Lessons</a></li>
+                        <li><a href="/Contact"
+                                class="hover:text-[#83497d] transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="px-6 md:px-16 lg:px-20 2xl:px-32">
+        <!-- Page Header -->
+        <section class="min-h-[40vh] flex items-center justify-center relative pt-[15vh] lg:pt-[17vh] xl:pt-[19vh]">
+            <div class="absolute inset-0 -z-10">
+                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#83497d] opacity-10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#dbdbdb] opacity-5 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="text-center max-w-4xl">
+                <h1 class="text-[#dbdbdb] text-[clamp(2rem,6vw,4rem)] font-light montserrat-alt mb-6">
+                    Perspective
+                </h1>
+                <p class="text-gray-400 text-[clamp(1rem,3vw,1.5rem)] mb-8 raleway">
+                    Exploring new technologies and sharing my perspective on modern web development.
+                </p>
+            </div>
+        </section>
+
+        <!-- Learning Topics Grid -->
+        <section class="pt-12 lg:pt-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
+
+                <!-- React.js -->
+                <div
+                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#61DAFB] to-[#21a8c7] rounded-xl flex items-center justify-center">
+                            <span class="text-gray-900 text-lg font-bold">⚛️</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">React.js</h3>
+                            <p class="text-gray-400 text-sm manrope">Frontend Framework</p>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
+                        Building interactive UIs with component-based architecture and modern hooks.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="bg-gray-800/50 rounded-lg p-4">
+                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                Component Reusability
+                            </h4>
+                            <p class="text-gray-500 text-sm raleway">
+                                Learning to build modular, reusable components that can scale across different projects.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-800/50 rounded-lg p-4">
+                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                State Management
+                            </h4>
+                            <p class="text-gray-500 text-sm raleway">
+                                Understanding how to manage application state efficiently using hooks and context.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Components</span>
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Hooks</span>
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">State</span>
+                    </div>
+
+                    <a href="perspective-detail.html?id=react"
+                        class="w-full bg-[#83497d] text-[#dbdbdb] text-center py-3 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm font-medium manrope block">
+                        Read My Perspective
+                    </a>
+                </div>
+
+                <!-- Node.js -->
+                <div
+                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#339933] to-[#267326] rounded-xl flex items-center justify-center">
+                            <span class="text-white text-lg font-bold">🟢</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">Node.js</h3>
+                            <p class="text-gray-400 text-sm manrope">Backend Runtime</p>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
+                        Server-side JavaScript and building scalable backend applications.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="bg-gray-800/50 rounded-lg p-4">
+                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                Event-Driven Architecture
+                            </h4>
+                            <p class="text-gray-500 text-sm raleway">
+                                Learning how Node.js handles asynchronous operations and event loops for high performance.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-800/50 rounded-lg p-4">
+                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                REST API Development
+                            </h4>
+                            <p class="text-gray-500 text-sm raleway">
+                                Building robust APIs that can handle multiple requests and scale with the application.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Backend</span>
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">APIs</span>
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">JavaScript</span>
+                    </div>
+
+                    <a href="perspective-detail.html?id=node"
+                        class="w-full bg-[#83497d] text-[#dbdbdb] text-center py-3 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm font-medium manrope block">
+                        Read My Perspective
+                    </a>
+                </div>
+
+                <!-- Additional Topic Placeholder -->
+                <div
+                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-[#83497d] to-[#6a3a6a] rounded-xl flex items-center justify-center">
+                            <span class="text-white text-lg">🚀</span>
+                        </div>
+                        <div>
+                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">More Coming Soon</h3>
+                            <p class="text-gray-400 text-sm manrope">Continuous Learning</p>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
+                        Always exploring new technologies and frameworks to expand my skillset.
+                    </p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="bg-gray-800/50 rounded-lg p-4">
+                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                Next.js & Full Stack
+                            </h4>
+                            <p class="text-gray-500 text-sm raleway">
+                                Exploring server-side rendering and full-stack development possibilities.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-800/50 rounded-lg p-4">
+                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                Database Integration
+                            </h4>
+                            <p class="text-gray-500 text-sm raleway">
+                                Learning to work with different databases and data management patterns.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Future</span>
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Learning</span>
+                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Growth</span>
+                    </div>
+
+                    <div class="text-center py-3 px-4 rounded-lg border border-gray-600 text-gray-500 text-sm font-medium manrope">
+                        More Perspectives Coming Soon
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <section class="min-h-[20vh] mb-8 flex items-center justify-center relative">
+            <div class="flex flex-wrap gap-4 justify-center items-center mt-8">
+                <a href="/"
+                    class="bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                    ← Back to Home
+                </a>
+                <a href="/Projects & Builds"
+                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                    Projects & Builds
+                </a>
+                <a href="/Lessons"
+                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                    Lessons Learned
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Same Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="container ml-auto mr-auto px-6 md:px-10 lg:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-[12vw] gap-8 text-center md:text-left">
+                <!-- Copyright -->
+                <div class="space-y-2">
+                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">&copy; 2024 .codr</h4>
+                    <p class="text-gray-400 text-sm manrope">All rights reserved</p>
+                </div>
+                <!-- Development -->
+                <div class="space-y-2">
+                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">Built With</h4>
+                    <p class="text-gray-400 text-sm manrope">Development & Design by Yash Khandelwal</p>
+                    <p class="text-gray-400 text-sm manrope">Development & Design Assistance by Deepseek</p>
+                </div>
+                <!-- Thanks -->
+                <div class="space-y-2">
+                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">Thank You</h4>
+                    <p class="text-gray-400 text-sm manrope">For exploring my journey</p>
+                    <p class="text-gray-400 text-sm manrope">Your visit means a lot! ✨</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center">
+                <p class="text-gray-500 text-sm raleway">Crafted with 💜 and endless coffee ☕</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

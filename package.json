@@ -4,9 +4,9 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./css/input.css -o ./output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./css/input.css -o ./output.css --minify",
-    "try": "npx @tailwindcss/cli -i ./css/input.css -o ./output.css"
+    "dev": "npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --minify",
+    "try": "npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css"
   },
   "keywords": [],
   "author": "",

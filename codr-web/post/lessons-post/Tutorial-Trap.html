@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden scroll-smooth">
+
+<head>
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking the Tutorial Trap - .codr</title>
+</head>
+
+<body class="bg-gray-950 overflow-x-hidden">
+    <!-- Same Navigation -->
+    <header class="w-screen h-[10vh] fixed md:top-0 left-0 z-100">
+        <nav class="">
+            <div class="flex items-center justify-between h-[10vh] px-6 md:hidden bg-gray-950">
+                <a href="index.html" class="w-[30vw] inline">
+                    <img src="/assets/logo.png" alt="" class="max-w-[21%] min-w-32 cursor-pointer">
+                </a>
+                <div class="flex flex-col gap-2 pt-4">
+                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
+                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="justify-between items-center h-[10vh] px-5 lg:px-16 hidden md:flex bg-gray-950">
+                <a href="index.html">
+                    <img src="/assets/logo.png" alt="" class="w-40 cursor-pointer 2xl:w-44">
+                </a>
+                <div class="text-[#dbdbdb] w-[60vw] text-lg lg:w-[58vw] xl:w-[40vw] pt-4">
+                    <ul class="flex justify-between gap-x-[5%] xl:gap-[0%] nunito">
+                        <li><a href="/" class="hover:text-[#83497d] transition-colors duration-300">Home</a></li>
+                        <li><a href="/Projects & Builds" class="hover:text-[#83497d] transition-colors duration-300">Projects & Builds</a></li>
+                        <li><a href="/Perspective" class="hover:text-[#83497d] transition-colors duration-300">Perspective</a></li>
+                        <li><a href="/Lessons" class="hover:text-[#83497d] transition-colors duration-300">Lessons Learned</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="px-6 md:px-16 lg:px-20 2xl:px-32">
+        <!-- Cover Image -->
+        <section class="pt-[15vh] lg:pt-[17vh] xl:pt-[19vh]">
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="w-full h-64 md:h-80 lg:h-96 bg-gradient-to-br from-[#83497d] to-[#6a3a6a] rounded-2xl flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h1 class="text-2xl md:text-3xl lg:text-4xl font-light montserrat-alt">Breaking the Tutorial Trap</h1>
+                        <p class="text-white/80 text-lg md:text-xl mt-2 raleway">How I escaped tutorial hell and started building real projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content -->
+        <section class="pb-16 lg:pb-20">
+            <div class="max-w-3xl mx-auto">
+                <!-- Article Header -->
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-gradient-to-br from-[#83497d] to-[#6a3a6a] rounded-xl flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-[#dbdbdb] text-xl font-semibold montserrat">Build Don't Just Learn</h2>
+                        <p class="text-gray-400 text-sm manrope">From passive consumption to active creation</p>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <article class="prose prose-invert prose-lg max-w-none">
+                    <div class="text-gray-400 leading-relaxed space-y-6 raleway">
+                        <p class="text-lg">
+                            For months, I was stuck in what developers call "tutorial hell" - watching endless coding tutorials, 
+                            collecting certificates, but building nothing substantial. I knew Tailwind CSS inside out, 
+                            could explain JavaScript concepts, but had zero projects to show for it.
+                        </p>
+
+                        <div class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 my-8">
+                            <h3 class="text-[#dbdbdb] text-xl font-semibold mb-4 montserrat flex items-center gap-2">
+                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                The Breaking Point
+                            </h3>
+                            <p class="text-gray-400 leading-relaxed raleway">
+                                The moment of truth came when a friend asked: "Can you show me something you've built?" 
+                                I had nothing but tutorial projects that followed exact instructions. That's when I realized 
+                                I was learning to follow, not to create.
+                            </p>
+                        </div>
+
+                        <h3 class="text-[#dbdbdb] text-2xl font-semibold mt-12 mb-6 montserrat">The Shift in Mindset</h3>
+                        
+                        <p>
+                            Something clicked in August 2025. I discovered Web3 and got genuinely excited about building 
+                            something that could actually matter. Instead of opening another tutorial, I opened VS Code 
+                            and started with a simple idea: a personal portfolio.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                            <div class="bg-gray-800/50 rounded-lg p-6">
+                                <h4 class="text-[#dbdbdb] font-medium mb-3 manrope flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                    Before: Tutorial Mindset
+                                </h4>
+                                <ul class="text-gray-500 text-sm space-y-2 raleway">
+                                    <li>• Follow exact instructions</li>
+                                    <li>• Copy-paste code</li>
+                                    <li>• Fear of making mistakes</li>
+                                    <li>• No original thinking</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-800/50 rounded-lg p-6">
+                                <h4 class="text-[#dbdbdb] font-medium mb-3 manrope flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                    After: Builder Mindset
+                                </h4>
+                                <ul class="text-gray-500 text-sm space-y-2 raleway">
+                                    <li>• Solve real problems</li>
+                                    <li>• Experiment and iterate</li>
+                                    <li>• Embrace debugging</li>
+                                    <li>• Learn by doing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 class="text-[#dbdbdb] text-2xl font-semibold mt-12 mb-6 montserrat">My First Real Project</h3>
+
+                        <p>
+                            I decided to build a simple calculator layout using Tailwind CSS. No tutorial, no hand-holding. 
+                            Just me, documentation, and Google when stuck. The struggle was real - alignment issues, 
+                            responsive design challenges, and countless console errors.
+                        </p>
+
+                        <div class="bg-gray-900/50 border-l-4 border-[#83497d] pl-6 py-4 my-8">
+                            <p class="text-gray-400 italic raleway">
+                                "The moment my calculator layout worked perfectly on mobile without breaking on desktop, 
+                                I felt a different kind of satisfaction. It wasn't just about completing a task; 
+                                it was about solving a puzzle I created myself."
+                            </p>
+                        </div>
+
+                        <h3 class="text-[#dbdbdb] text-2xl font-semibold mt-12 mb-6 montserrat">Using AI as a Helper, Not a Crutch</h3>
+
+                        <p>
+                            I learned to use AI assistants like Deepseek strategically - not to write code for me, 
+                            but to explain concepts when I was genuinely stuck. Instead of asking "build me a navbar," 
+                            I'd ask "why is my flexbox not centering properly?" This subtle shift made all the difference.
+                        </p>
+
+                        <div class="bg-gray-800/50 rounded-lg p-6 my-8">
+                            <h4 class="text-[#dbdbdb] font-medium mb-3 manrope flex items-center gap-2">
+                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                                Key Realizations
+                            </h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-[#83497d] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-500 text-sm raleway">Tutorials teach you how to follow instructions; building teaches you how to solve problems</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-[#83497d] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-500 text-sm raleway">Struggle is where real learning happens - comfort zones don't build skills</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-[#83497d] rounded-full mt-2 flex-shrink-0"></div>
+                                    <p class="text-gray-500 text-sm raleway">Projects don't need to be perfect; they need to be started</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-[#dbdbdb] text-2xl font-semibold mt-12 mb-6 montserrat">Where I Am Now</h3>
+
+                        <p>
+                            Today, I can code for 6 hours straight with music on and feel completely in flow. 
+                            The frustration of debugging has transformed into the thrill of problem-solving. 
+                            I'm building my personal brand, working on real projects, and constantly learning - 
+                            but now it's driven by curiosity and creation, not just consumption.
+                        </p>
+
+                        <div class="bg-gradient-to-r from-[#83497d] to-[#6a3a6a] rounded-2xl p-8 text-center my-12">
+                            <h4 class="text-white text-xl font-semibold mb-4 montserrat">The Biggest Lesson</h4>
+                            <p class="text-white/90 text-lg raleway">
+                                "Start building, no matter how small. The confidence from creating something yourself 
+                                is worth more than a thousand completed tutorials."
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-3 mt-12 pt-8 border-t border-gray-800">
+                    <span class="bg-gray-800 text-[#dbdbdb] px-4 py-2 rounded-full text-sm manrope">Learning Journey</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-4 py-2 rounded-full text-sm manrope">Tutorial Hell</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-4 py-2 rounded-full text-sm manrope">Mindset Shift</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-4 py-2 rounded-full text-sm manrope">Project Building</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <section class="min-h-[20vh] mb-8 flex items-center justify-center relative">
+            <div class="flex flex-wrap gap-4 justify-center items-center mt-8">
+                <a href="/Lessons"
+                    class="bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                    ← Back to Lessons
+                </a>
+                <a href="/"
+                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                    Go Home
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Same Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="container ml-auto mr-auto px-6 md:px-10 lg:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-[12vw] gap-8 text-center md:text-left">
+                <!-- Copyright -->
+                <div class="space-y-2">
+                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">&copy; 2024 .codr</h4>
+                    <p class="text-gray-400 text-sm manrope">All rights reserved</p>
+                </div>
+                <!-- Development -->
+                <div class="space-y-2">
+                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">Built With</h4>
+                    <p class="text-gray-400 text-sm manrope">Development & Design by Yash Khandelwal</p>
+                    <p class="text-gray-400 text-sm manrope">Development & Design Assistance by Deepseek</p>
+                </div>
+                <!-- Thanks -->
+                <div class="space-y-2">
+                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">Thank You</h4>
+                    <p class="text-gray-400 text-sm manrope">For exploring my journey</p>
+                    <p class="text-gray-400 text-sm manrope">Your visit means a lot! ✨</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center">
+                <p class="text-gray-500 text-sm raleway">Crafted with 💜 and endless coffee ☕</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
