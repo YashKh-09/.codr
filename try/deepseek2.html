@@ -1,387 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden scroll-smooth">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="utility.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currently Learning - .codr</title>
+    <link rel="stylesheet" href="/css/output.css">
 </head>
-<body class="bg-gray-950 overflow-x-hidden">
-    <!-- Same Navigation -->
-    <header class="w-screen h-[10vh] fixed md:top-0 left-0 z-100">
-        <nav class="">
-            <div class="flex items-center justify-between h-[10vh] px-6 md:hidden bg-gray-950">
-                <a href="index.html" class="w-[30vw] inline">
-                    <img src="assets/logo.png" alt="" class="max-w-[21%] min-w-32 cursor-pointer">
-                </a>
-                <div class="flex flex-col gap-2 pt-4">
-                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
-                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
-                </div>
-            </div>
-
-            <div class="justify-between items-center h-[10vh] px-16 hidden md:flex bg-gray-950">
-                <a href="index.html">
-                    <img src="assets/logo.png" alt="" class="w-40 cursor-pointer 2xl:w-44">
-                </a>
-                <div class="text-[#dbdbdb] w-[50vw] text-lg lg:w-[40vw] xl:w-[32vw] pt-4">
-                    <ul class="flex justify-between gap-x-[10%] nunito">
-                        <li><a href="index.html" class="hover:text-[#83497d] transition-colors duration-300">Home</a></li>
-                        <li><a href="projects.html" class="hover:text-[#83497d] transition-colors duration-300">Projects & Builds</a></li>
-                        <li><a href="lessons.html" class="hover:text-[#83497d] transition-colors duration-300">Lessons</a></li>
-                        <li><a href="learning.html" class="hover:text-[#83497d] transition-colors duration-300">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="pt-[10vh] px-6 md:px-16 lg:px-20 2xl:px-32">
-        <!-- Page Header -->
-        <section class="min-h-[30vh] flex items-center justify-center relative pt-[10vh] lg:pt-[15vh]">
-            <div class="absolute inset-0 -z-10">
-                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#83497d] opacity-10 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#dbdbdb] opacity-5 rounded-full blur-3xl"></div>
-            </div>
-
-            <div class="text-center max-w-4xl max-h-xl">
-                <h1 class="text-[#dbdbdb] text-[clamp(2rem,6vw,4rem)] font-light montserrat-alt mb-6">
-                    Currently Learning
-                </h1>
-                <p class="text-gray-400 text-[clamp(1rem,3vw,1.5rem)] mb-8 raleway">
-                    Exploring new technologies and sharing my perspective on modern web development.
-                </p>
-            </div>
-        </section>
-
-        <!-- Learning Topics Grid -->
-        <section class="py-12 lg:py-20">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="font-bold text-xl">YourLogo</div>
                 
-                <!-- React.js -->
-                <div class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-[#61DAFB] to-[#21a8c7] rounded-xl flex items-center justify-center">
-                            <span class="text-gray-900 text-lg font-bold">⚛️</span>
-                        </div>
-                        <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">React.js</h3>
-                    </div>
-                    
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4 raleway">
-                        Building interactive UIs with component-based architecture and modern hooks.
-                    </p>
-
-                    <div class="space-y-3 mb-6">
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Component reusability</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">State management</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Hooks ecosystem</span>
-                        </div>
-                    </div>
-
-                    <button onclick="openLearning('react')" class="w-full bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 text-sm font-medium manrope">
-                        Read My Perspective
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Projects</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden">
+                    <button id="dropdownBtn" class="p-2 rounded-md text-gray-700 hover:bg-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
                     </button>
                 </div>
-
-                <!-- Node.js -->
-                <div class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-[#339933] to-[#267326] rounded-xl flex items-center justify-center">
-                            <span class="text-white text-lg font-bold">🟢</span>
-                        </div>
-                        <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">Node.js</h3>
-                    </div>
-                    
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4 raleway">
-                        Server-side JavaScript and building scalable backend applications.
-                    </p>
-
-                    <div class="space-y-3 mb-6">
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Event-driven architecture</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Package management</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">REST API development</span>
-                        </div>
-                    </div>
-
-                    <button onclick="openLearning('node')" class="w-full bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 text-sm font-medium manrope">
-                        Read My Perspective
-                    </button>
-                </div>
-
-                <!-- Express.js -->
-                <div class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-[#000000] to-[#333333] rounded-xl flex items-center justify-center">
-                            <span class="text-white text-lg">🚀</span>
-                        </div>
-                        <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">Express.js</h3>
-                    </div>
-                    
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4 raleway">
-                        Minimal and flexible web application framework for Node.js.
-                    </p>
-
-                    <div class="space-y-3 mb-6">
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Middleware concepts</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Routing systems</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Error handling</span>
-                        </div>
-                    </div>
-
-                    <button onclick="openLearning('express')" class="w-full bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 text-sm font-medium manrope">
-                        Read My Perspective
-                    </button>
-                </div>
-
-                <!-- MongoDB -->
-                <div class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-[#47A248] to-[#367c37] rounded-xl flex items-center justify-center">
-                            <span class="text-white text-lg">🍃</span>
-                        </div>
-                        <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">MongoDB</h3>
-                    </div>
-                    
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4 raleway">
-                        NoSQL database for modern applications with flexible document model.
-                    </p>
-
-                    <div class="space-y-3 mb-6">
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Document-based data</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Aggregation framework</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-[#83497d] rounded-full"></div>
-                            <span class="text-gray-400 text-sm raleway">Database operations</span>
-                        </div>
-                    </div>
-
-                    <button onclick="openLearning('mongodb')" class="w-full bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 text-sm font-medium manrope">
-                        Read My Perspective
-                    </button>
-                </div>
-
             </div>
-        </section>
-
-        <!-- Action Buttons Section -->
-        <section class="min-h-[20vh] mb-8 flex items-center justify-center relative">
-            <div class="flex flex-wrap gap-4 justify-center items-center mt-8">
-                <a href="index.html"
-                    class="bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    ← Back to Home
-                </a>
-                <a href="projects.html"
-                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    Projects & Build
-                </a>
-                <a href="lessons.html"
-                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    Lessons Learned
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Learning Modals -->
-    <div id="learningModal" class="fixed inset-0 bg-black/80 z-1000 hidden items-center justify-center p-4">
-        <div class="bg-gray-900 border border-gray-700 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="sticky top-0 bg-gray-900 border-b border-gray-700 p-6 flex justify-between items-center">
-                <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat" id="modalTitle">Learning Topic</h3>
-                <button onclick="closeLearning()" class="text-gray-400 hover:text-[#dbdbdb] transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="p-6" id="modalContent">
-                <!-- Content will be loaded here -->
+            
+            <!-- Dropdown Menu -->
+            <div id="dropdownMenu" class="md:hidden hidden absolute right-4 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Projects</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Same Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 py-8">
-        <div class="container ml-auto mr-auto px-6 md:px-10 lg:px-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-[12vw] gap-8 text-center md:text-left">
-                <!-- Copyright -->
-                <div class="space-y-2">
-                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">&copy; 2024 .codr</h4>
-                    <p class="text-gray-400 text-sm manrope">All rights reserved</p>
-                </div>
-                <!-- Development -->
-                <div class="space-y-2">
-                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">Built With</h4>
-                    <p class="text-gray-400 text-sm manrope">Development & Design by Yash Khandelwal</p>
-                    <p class="text-gray-400 text-sm manrope">Development & Design Assistance by Deepseek</p>
-                </div>
-                <!-- Thanks -->
-                <div class="space-y-2">
-                    <h4 class="text-[#dbdbdb] font-semibold mb-3 montserrat">Thank You</h4>
-                    <p class="text-gray-400 text-sm manrope">For exploring my journey</p>
-                    <p class="text-gray-400 text-sm manrope">Your visit means a lot! ✨</p>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-10 pt-6 text-center">
-                <p class="text-gray-500 text-sm raleway">Crafted with 💜 and endless coffee ☕</p>
-            </div>
-        </div>
-    </footer>
+    
 
     <script>
-        // Learning content data
-        const learnings = {
-            react: {
-                title: "React.js - My Perspective",
-                content: `
-                    <div class="space-y-4">
-                        <p class="text-gray-400 leading-relaxed raleway">
-                            React has completely changed how I think about building user interfaces. The component-based approach 
-                            makes code more reusable and maintainable compared to traditional DOM manipulation.
-                        </p>
-                        <div class="bg-gray-800/30 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-semibold mb-2 manrope">What I'm Loving</h4>
-                            <p class="text-gray-400 text-sm raleway">
-                                The declarative nature of React makes it easier to reason about the UI state. 
-                                JSX feels intuitive once you get used to it, and the component reusability is a game-changer.
-                            </p>
-                        </div>
-                        <div class="bg-yellow-900/20 border border-yellow-800 rounded-lg p-4">
-                            <h4 class="text-yellow-200 font-semibold mb-2 manrope">Current Focus</h4>
-                            <p class="text-yellow-100 text-sm raleway">
-                                Mastering hooks (useState, useEffect), understanding the virtual DOM, and learning best practices 
-                                for component structure and state management.
-                            </p>
-                        </div>
-                    </div>
-                `
-            },
-            node: {
-                title: "Node.js - My Perspective",
-                content: `
-                    <div class="space-y-4">
-                        <p class="text-gray-400 leading-relaxed raleway">
-                            Learning Node.js has been eye-opening. Using JavaScript on both frontend and backend 
-                            creates a seamless development experience and reduces context switching.
-                        </p>
-                        <div class="bg-gray-800/30 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-semibold mb-2 manrope">Key Insights</h4>
-                            <p class="text-gray-400 text-sm raleway">
-                                The event-driven, non-blocking architecture makes Node.js incredibly efficient for I/O-heavy operations. 
-                                Understanding the event loop has been crucial for writing performant applications.
-                            </p>
-                        </div>
-                        <div class="bg-yellow-900/20 border border-yellow-800 rounded-lg p-4">
-                            <h4 class="text-yellow-200 font-semibold mb-2 manrope">Learning Path</h4>
-                            <p class="text-yellow-100 text-sm raleway">
-                                Currently focusing on core modules, understanding npm ecosystem, and building RESTful APIs. 
-                                Next step: authentication and database integration.
-                            </p>
-                        </div>
-                    </div>
-                `
-            },
-            express: {
-                title: "Express.js - My Perspective",
-                content: `
-                    <div class="space-y-4">
-                        <p class="text-gray-400 leading-relaxed raleway">
-                            Express provides the perfect balance of simplicity and power for building web applications. 
-                            Its minimalistic approach doesn't get in the way while providing all the essential features.
-                        </p>
-                        <div class="bg-gray-800/30 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-semibold mb-2 manrope">Why I Chose Express</h4>
-                            <p class="text-gray-400 text-sm raleway">
-                                The middleware concept is brilliant - it allows for clean, modular code organization. 
-                                Routing is intuitive, and the extensive middleware ecosystem means I can add functionality as needed.
-                            </p>
-                        </div>
-                        <div class="bg-yellow-900/20 border border-yellow-800 rounded-lg p-4">
-                            <h4 class="text-yellow-200 font-semibold mb-2 manrope">Current Exploration</h4>
-                            <p class="text-yellow-100 text-sm raleway">
-                                Learning middleware implementation, error handling patterns, REST API design principles, 
-                                and integrating with databases and authentication systems.
-                            </p>
-                        </div>
-                    </div>
-                `
-            },
-            mongodb: {
-                title: "MongoDB - My Perspective",
-                content: `
-                    <div class="space-y-4">
-                        <p class="text-gray-400 leading-relaxed raleway">
-                            MongoDB's document-based approach feels more natural for JavaScript development compared to traditional SQL. 
-                            The flexibility of storing data in JSON-like documents aligns perfectly with how I think about data.
-                        </p>
-                        <div class="bg-gray-800/30 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-semibold mb-2 manrope">Document Model Benefits</h4>
-                            <p class="text-gray-400 text-sm raleway">
-                                No need for complex joins, schema flexibility during development, and the ability to store 
-                                complex hierarchical data in a single document makes development faster and more intuitive.
-                            </p>
-                        </div>
-                        <div class="bg-yellow-900/20 border border-yellow-800 rounded-lg p-4">
-                            <h4 class="text-yellow-200 font-semibold mb-2 manrope">Learning Focus</h4>
-                            <p class="text-yellow-100 text-sm raleway">
-                                Understanding CRUD operations, aggregation pipelines, indexing strategies, and best practices 
-                                for schema design in a NoSQL environment.
-                            </p>
-                        </div>
-                    </div>
-                `
-            }
-        };
+        const dropdownBtn = document.getElementById('dropdownBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
 
-        function openLearning(topicId) {
-            const learning = learnings[topicId];
-            if (learning) {
-                document.getElementById('modalTitle').textContent = learning.title;
-                document.getElementById('modalContent').innerHTML = learning.content;
-                document.getElementById('learningModal').classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-            }
-        }
+        dropdownBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
 
-        function closeLearning() {
-            document.getElementById('learningModal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside content
-        document.getElementById('learningModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLearning();
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.add('hidden');
             }
         });
     </script>

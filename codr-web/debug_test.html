@@ -1,22 +1,37 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Debug Test</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body>
-    <h1>Template Debug Test</h1>
+<body class="bg-gray-950 overflow-x-hidden">
+    <header class="w-screen h-[10vh] fixed md:top-0 left-0 z-100">
+        <nav class="">
+            <div class="flex items-center justify-between h-[10vh] px-6 xl:hidden bg-gray-950">
+                <a href="/" class="w-[30vw] inline">
+                    <img src="/assets/logo.png" alt="" class="max-w-[21%] min-w-32 cursor-pointer">
+                </a>
+                <div class="flex flex-col gap-2 pt-4">
+                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
+                    <div class="w-4 h-0.5 bg-[#dbdbdb] rounded-full"></div>
+                </div>
+            </div>
+        </header>      
+
+            <div class="h-[10vh] w-screen absolute right-0 bg-gray-900/90 backdrop-blur-sm  mt-[10vh] lg:mt-[13vh]">
+                <ul class="text-white text-[0.875rem] flex items-center justify-around  h-full">
+                    <li>home</li>
+                    <li>blog</li>
+                    <li>About</li>
+                    <li>contact</li>
+                    
+                </ul>
+                
     
-    <!-- Test 1: Simple variable -->
-    <p>Variable: {{ test_var }}</p>
-    
-    <!-- Test 2: Jinja logic -->
-    <p>Logic: {% if test_var %}YES{% else %}NO{% endif %}</p>
-    
-    <!-- Test 3: Loop -->
-    <p>Loop: 
-    {% for i in range(3) %}
-        {{ i }}
-    {% endfor %}
-    </p>
+            </div>
+
 </body>
 </html>
