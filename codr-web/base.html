@@ -21,7 +21,7 @@
 
     <header class="w-screen h-[10vh] fixed md:top-0 left-0 z-100">
         <nav class="">
-            <div class="flex items-center justify-between h-[10vh] px-6 md:hidden bg-gray-950">
+            <div class="flex items-center justify-between h-[10vh] px-6 xl:hidden bg-gray-950">
                 <a href="/" class="w-[30vw] inline">
                     <img src="/assets/logo.png" alt="" class="max-w-[21%] min-w-32 cursor-pointer">
                 </a>
@@ -31,12 +31,12 @@
                 </div>
             </div>
 
-            <div class="justify-between items-center h-[10vh] px-16 hidden md:flex bg-gray-950">
+            <div class="justify-between items-center h-[10vh] px-16 hidden xl:flex bg-gray-950">
                 <a href="/">
                     <img src="/assets/logo.png" alt="" class="w-40 cursor-pointer 2xl:w-44">
                 </a>
-                <div class="text-[#dbdbdb] w-[50vw] text-lg lg:w-[40vw] xl:w-[32vw] pt-4">
-                    <ul class="flex justify-between gap-x-[10%] nunito">
+                <div class="text-[#dbdbdb] text-[1rem] w-[50vw] min-[1390px]:text-[1.125rem] min-[1390px]:w-[43vw] pt-4">
+                    <ul class="flex justify-between gap-x-[5%] nunito">
 
                         {% if current_page == "/" %}
                         {% set navi = [
