@@ -100,8 +100,8 @@ def projects():
 def serve_blog_post(post_name):
     folders = [
         'codr-web/post/lessons-post',
-        'codr-web/posts/project-post', 
-        'codr-web/posts/perspective-post'
+        'codr-web/post/project-post', 
+        'codr-web/post/perspective-post'
     ]
     for folder in folders:
         try:
@@ -115,4 +115,4 @@ def serve_images(filename):
     return send_from_directory('assets', filename)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=0)

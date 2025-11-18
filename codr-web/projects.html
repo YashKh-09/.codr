@@ -3,240 +3,173 @@
 
 {% block main %}
 
-    <main class="px-6 md:px-16 lg:px-20 2xl:px-32">
-        <!-- Page Header -->
-        <section class="min-h-[40vh] flex items-center justify-center relative pt-[15vh] lg:pt-[17vh] xl:pt-[19vh]">
+<main class="px-6 md:px-16 lg:px-20 2xl:px-32">
+    <!-- Page Header -->
+    <section class="min-h-[40vh] flex items-center justify-center relative pt-[15vh] lg:pt-[17vh] xl:pt-[19vh]">
 
-            <div class="absolute inset-0 -z-10">
-                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#83497d] opacity-10 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#dbdbdb] opacity-5 rounded-full blur-3xl"></div>
-            </div>
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#83497d] opacity-10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#dbdbdb] opacity-5 rounded-full blur-3xl"></div>
+        </div>
 
-            <div class="text-center max-w-4xl">
-                <h1 class="text-[#dbdbdb] text-[clamp(2rem,6vw,4rem)] font-light montserrat-alt mb-6">
-                    Projects & Builds
-                </h1>
-                <p class="text-gray-400 text-[clamp(1rem,3vw,1.5rem)] mb-8 raleway">
-                    Where ideas meet code. Each project is a story of learning, building, and growing.
+        <div class="text-center max-w-4xl">
+            <h1 class="text-[#dbdbdb] text-[clamp(2rem,6vw,4rem)] font-light montserrat-alt mb-6">
+                Projects & Builds
+            </h1>
+            <p class="text-gray-400 text-[clamp(1rem,3vw,1.5rem)] mb-8 raleway">
+                Where ideas meet code. Each project is a story of learning, building, and growing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="pt-12 lg:pt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
+
+            <!-- Project 1: .codr -->
+            <div
+                class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-[#83497d] to-[#6a3a6a] rounded-xl flex items-center justify-center">
+                        <span class="text-white text-lg">💻</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">.codr</h3>
+                        <p class="text-gray-400 text-sm manrope">Personal Brand Platform</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
+                    My digital home - a portfolio, blog, and personal brand all in one. Built to document my coding
+                    journey authentically.
                 </p>
-            </div>
-        </section>
 
-        <!-- Projects Grid -->
-        <section class="pt-12 lg:pt-20">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
-
-                <!-- Project 1: .codr -->
-                <div
-                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-[#83497d] to-[#6a3a6a] rounded-xl flex items-center justify-center">
-                            <span class="text-white text-lg">💻</span>
-                        </div>
-                        <div>
-                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">.codr</h3>
-                            <p class="text-gray-400 text-sm manrope">Personal Brand Platform</p>
-                        </div>
+                <div class="space-y-4 mb-6">
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                            <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                            Beyond Just a Portfolio
+                        </h4>
+                        <p class="text-gray-500 text-sm raleway">
+                            Created .codr as a space to share not just finished projects, but the entire learning
+                            process - struggles and all.
+                        </p>
                     </div>
 
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
-                        My digital home - a portfolio, blog, and personal brand all in one. Built to document my coding
-                        journey authentically.
-                    </p>
-
-                    <div class="space-y-4 mb-6">
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Beyond Just a Portfolio
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Created .codr as a space to share not just finished projects, but the entire learning
-                                process - struggles and all.
-                            </p>
-                        </div>
-
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Design Philosophy
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Minimal, content-first approach. Every design decision serves the purpose of better
-                                storytelling.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span
-                            class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Mobile-First</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Personal
-                            Brand</span>
-                    </div>
-
-                    <div class="flex gap-3">
-                        <a href="https://github.com/yash-khandelwal-codr/codr" target="_blank"
-                            class="flex-1 bg-[#83497d] text-[#dbdbdb] text-center py-2 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm manrope">
-                            View Code
-                        </a>
-                        <a href="project-detail.html?id=codr"
-                            class="flex-1 border border-[#83497d] text-[#83497d] text-center py-2 px-4 rounded-lg hover:bg-[#83497d] hover:text-white transition-colors text-sm manrope">
-                            Read More
-                        </a>
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                            <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                            Design Philosophy
+                        </h4>
+                        <p class="text-gray-500 text-sm raleway">
+                            Minimal, content-first approach. Every design decision serves the purpose of better
+                            storytelling.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Project 2: Templates -->
-                <div
-                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-[#1DB954] to-[#1ed760] rounded-xl flex items-center justify-center">
-                            <span class="text-white text-lg">🎨</span>
-                        </div>
-                        <div>
-                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">Templates</h3>
-                            <p class="text-gray-400 text-sm manrope">UI Component Library</p>
-                        </div>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Mobile-First</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Personal
+                        Brand</span>
+                </div>
+
+                <div class="flex gap-3">
+                    <a href="https://github.com/dot-codr/.codr" target="_blank"
+                        class="flex-1 bg-[#83497d] text-[#dbdbdb] text-center py-2 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm manrope">
+                        View Code
+                    </a>
+                    <a href="/dot-codr"
+                        class="flex-1 border border-[#83497d] text-[#83497d] text-center py-2 px-4 rounded-lg hover:bg-[#83497d] hover:text-white transition-colors text-sm manrope">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div
+                class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-[#83497d] to-[#6a3a6a] rounded-xl flex items-center justify-center">
+                        <span class="text-white text-lg">🐍</span>
                     </div>
-
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
-                        A collection of reusable UI components and templates to speed up development and maintain design
-                        consistency.
-                    </p>
-
-                    <div class="space-y-4 mb-6">
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Why Build Templates?
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Realized I was rebuilding the same components. Created a library to focus more on unique
-                                features than repetitive UI.
-                            </p>
-                        </div>
-
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Design System Approach
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Learned to think in design systems - consistent spacing, color palettes, and reusable
-                                patterns.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Component
-                            Library</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Design
-                            System</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Reusable
-                            UI</span>
-                    </div>
-
-                    <div class="flex gap-3">
-                        <a href="https://github.com/yash-khandelwal-codr/templates" target="_blank"
-                            class="flex-1 bg-[#83497d] text-[#dbdbdb] text-center py-2 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm manrope">
-                            View Code
-                        </a>
-                        <a href="project-detail.html?id=templates"
-                            class="flex-1 border border-[#83497d] text-[#83497d] text-center py-2 px-4 rounded-lg hover:bg-[#83497d] hover:text-white transition-colors text-sm manrope">
-                            Read More
-                        </a>
+                    <div>
+                        <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">SWAPLY</h3>
+                        <p class="text-gray-400 text-sm manrope">My friend's Project</p>
                     </div>
                 </div>
 
-                <!-- Project 3: JS Game -->
-                <div
-                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-[#4A90E2] to-[#357ABD] rounded-xl flex items-center justify-center">
-                            <span class="text-white text-lg">🎮</span>
-                        </div>
-                        <div>
-                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">JS Game</h3>
-                            <p class="text-gray-400 text-sm manrope">Interactive JavaScript Project</p>
-                        </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
+                    Building robust and scalable web applications with Python Flask framework.
+                </p>
+
+                <div class="space-y-4 mb-6">
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                            <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                            A Book selling shop
+                        </h4>
+                        <p class="text-gray-500 text-sm raleway">
+                            A minimal, fast online store that lets users buy books and sell used ones straight to the
+                            site owner. </p>
                     </div>
 
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
-                        Building interactive games with vanilla JavaScript to understand DOM manipulation, event
-                        handling, and game logic.
-                    </p>
 
-                    <div class="space-y-4 mb-6">
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Learning Through Play
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Games make complex JavaScript concepts tangible. Built a simple game to understand state
-                                management and user interaction.
-                            </p>
-                        </div>
-
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Technical Challenges
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Handling game states, collision detection, and smooth animations without frameworks was
-                                both challenging and rewarding.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Vanilla
-                            JS</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Game
-                            Development</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">DOM
-                            Manipulation</span>
-                    </div>
-
-                    <div class="flex gap-3">
-                        <a href="https://github.com/yash-khandelwal-codr/js-game" target="_blank"
-                            class="flex-1 bg-[#83497d] text-[#dbdbdb] text-center py-2 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm manrope">
-                            View Code
-                        </a>
-                        <a href="project-detail.html?id=jsgame"
-                            class="flex-1 border border-[#83497d] text-[#83497d] text-center py-2 px-4 rounded-lg hover:bg-[#83497d] hover:text-white transition-colors text-sm manrope">
-                            Read More
-                        </a>
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                            <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                            Authentication & Security
+                        </h4>
+                        <p class="text-gray-500 text-sm raleway">
+                            Using the OAuth API with Gmail restriction for clean and secure authentication.
+                        </p>
                     </div>
                 </div>
 
-            </div>
-        </section>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Python</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Flask</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Tailwindcss</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Online store</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">JavaScript</span>
+                </div>
 
-        <!-- Navigation Buttons -->
-        <section class="min-h-[20vh] mb-8 flex items-center justify-center relative">
-            <div class="flex flex-wrap gap-4 justify-center items-center mt-8">
-                <a href="/"
-                    class="bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    ← Back to Home
-                </a>
-                <a href="/Lessons"
-                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    Lessons
-                </a>
-                <a href="/Perspective"
-                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    Perspective
-                </a>
+                <div
+                    class="text-center py-3 px-4 rounded-lg border border-gray-600 text-gray-500 text-sm font-medium manrope">
+                    Flask Development Focus
+                </div>
             </div>
-        </section>
-    </main>    
+
+
+        </div>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <section class="min-h-[20vh] mb-8 flex items-center justify-center relative">
+        <div class="flex flex-wrap gap-4 justify-center items-center mt-8">
+            <a href="/"
+                class="bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                ← Back to Home
+            </a>
+            <a href="/Lessons"
+                class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                Lessons
+            </a>
+            <a href="/Perspective"
+                class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                Perspective
+            </a>
+        </div>
+    </section>
+</main>
 {% endblock %}
 </body>
+
 </html>

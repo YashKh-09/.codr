@@ -3,204 +3,156 @@
 
 {% block main %}
 
-    <main class="px-6 md:px-16 lg:px-20 2xl:px-32">
-        <!-- Page Header -->
-        <section class="min-h-[40vh] flex items-center justify-center relative pt-[15vh] lg:pt-[17vh] xl:pt-[19vh]">
-            <div class="absolute inset-0 -z-10">
-                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#83497d] opacity-10 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#dbdbdb] opacity-5 rounded-full blur-3xl"></div>
-            </div>
+<main class="px-6 md:px-16 lg:px-20 2xl:px-32">
+    <!-- Page Header -->
+    <section class="min-h-[40vh] flex items-center justify-center relative pt-[15vh] lg:pt-[17vh] xl:pt-[19vh]">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#83497d] opacity-10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#dbdbdb] opacity-5 rounded-full blur-3xl"></div>
+        </div>
 
-            <div class="text-center max-w-4xl">
-                <h1 class="text-[#dbdbdb] text-[clamp(2rem,6vw,4rem)] font-light montserrat-alt mb-6">
-                    Perspective
-                </h1>
-                <p class="text-gray-400 text-[clamp(1rem,3vw,1.5rem)] mb-8 raleway">
-                    Exploring new technologies and sharing my perspective on modern web development.
+        <div class="text-center max-w-4xl">
+            <h1 class="text-[#dbdbdb] text-[clamp(2rem,6vw,4rem)] font-light montserrat-alt mb-6">
+                Perspective
+            </h1>
+            <p class="text-gray-400 text-[clamp(1rem,3vw,1.5rem)] mb-8 raleway">
+                Exploring new technologies and sharing my perspective on modern web development.
+            </p>
+        </div>
+    </section>
+
+    <!-- Learning Topics Grid -->
+    <section class="pt-12 lg:pt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
+
+            <div
+                class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-[#11657c] to-[#0f7186] rounded-xl flex items-center justify-center">
+                        <span class="text-gray-900 text-lg font-bold">💻</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">Arch Linux</h3>
+                        <p class="text-gray-400 text-sm manrope">Operating System</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
+                    A lightweight, flexible Linux distro built on simplicity, transparency, and full user control.
                 </p>
-            </div>
-        </section>
 
-        <!-- Learning Topics Grid -->
-        <section class="pt-12 lg:pt-20">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
-
-                <!-- React.js -->
-                <div
-                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-[#61DAFB] to-[#21a8c7] rounded-xl flex items-center justify-center">
-                            <span class="text-gray-900 text-lg font-bold">⚛️</span>
-                        </div>
-                        <div>
-                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">React.js</h3>
-                            <p class="text-gray-400 text-sm manrope">Frontend Framework</p>
-                        </div>
+                <div class="space-y-4 mb-6">
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                            <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                            Arch
+                        </h4>
+                        <p class="text-gray-500 text-sm raleway">
+A bare-bones install with just the essentials; no camera, no calculator, nothing extra.                        </p>
                     </div>
 
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
-                        Building interactive UIs with component-based architecture and modern hooks.
-                    </p>
-
-                    <div class="space-y-4 mb-6">
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Component Reusability
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Learning to build modular, reusable components that can scale across different projects.
-                            </p>
-                        </div>
-
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                State Management
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Understanding how to manage application state efficiently using hooks and context.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Components</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Hooks</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">State</span>
-                    </div>
-
-                    <a href="perspective-detail.html?id=react"
-                        class="w-full bg-[#83497d] text-[#dbdbdb] text-center py-3 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm font-medium manrope block">
-                        Read My Perspective
-                    </a>
-                </div>
-
-                <!-- Node.js -->
-                <div
-                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-[#339933] to-[#267326] rounded-xl flex items-center justify-center">
-                            <span class="text-white text-lg font-bold">🟢</span>
-                        </div>
-                        <div>
-                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">Node.js</h3>
-                            <p class="text-gray-400 text-sm manrope">Backend Runtime</p>
-                        </div>
-                    </div>
-
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
-                        Server-side JavaScript and building scalable backend applications.
-                    </p>
-
-                    <div class="space-y-4 mb-6">
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Event-Driven Architecture
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Learning how Node.js handles asynchronous operations and event loops for high performance.
-                            </p>
-                        </div>
-
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                REST API Development
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Building robust APIs that can handle multiple requests and scale with the application.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Backend</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">APIs</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">JavaScript</span>
-                    </div>
-
-                    <a href="perspective-detail.html?id=node"
-                        class="w-full bg-[#83497d] text-[#dbdbdb] text-center py-3 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm font-medium manrope block">
-                        Read My Perspective
-                    </a>
-                </div>
-
-                <!-- Additional Topic Placeholder -->
-                <div
-                    class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-[#83497d] to-[#6a3a6a] rounded-xl flex items-center justify-center">
-                            <span class="text-white text-lg">🚀</span>
-                        </div>
-                        <div>
-                            <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">More Coming Soon</h3>
-                            <p class="text-gray-400 text-sm manrope">Continuous Learning</p>
-                        </div>
-                    </div>
-
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
-                        Always exploring new technologies and frameworks to expand my skillset.
-                    </p>
-
-                    <div class="space-y-4 mb-6">
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Next.js & Full Stack
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Exploring server-side rendering and full-stack development possibilities.
-                            </p>
-                        </div>
-
-                        <div class="bg-gray-800/50 rounded-lg p-4">
-                            <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
-                                <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
-                                Database Integration
-                            </h4>
-                            <p class="text-gray-500 text-sm raleway">
-                                Learning to work with different databases and data management patterns.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Future</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Learning</span>
-                        <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Growth</span>
-                    </div>
-
-                    <div class="text-center py-3 px-4 rounded-lg border border-gray-600 text-gray-500 text-sm font-medium manrope">
-                        More Perspectives Coming Soon
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                            <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                            KDE Plasma
+                        </h4>
+                        <p class="text-gray-500 text-sm raleway">
+                            A sleek Arch setup powered by KDE Plasma for a customizable and ultra-smooth desktop
+                            experience. </p>
                     </div>
                 </div>
 
-            </div>
-        </section>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Kernel</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">KDE</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Arch</span>
+                </div>
 
-        <!-- Navigation Buttons -->
-        <section class="min-h-[20vh] mb-8 flex items-center justify-center relative">
-            <div class="flex flex-wrap gap-4 justify-center items-center mt-8">
-                <a href="/"
-                    class="bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    ← Back to Home
-                </a>
-                <a href="/Projects & Builds"
-                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    Projects & Builds
-                </a>
-                <a href="/Lessons"
-                    class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
-                    Lessons 
+                <a href="/Arch"
+                    class="w-full bg-[#83497d] text-[#dbdbdb] text-center py-3 px-4 rounded-lg hover:bg-[#6a3a6a] transition-colors text-sm font-medium manrope block">
+                    Read My Perspective
                 </a>
             </div>
-        </section>
-    </main>
+
+            <!-- Node.js -->
+
+            <div
+                class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6 hover:border-[#83497d] transition-all duration-300 group">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-[#83497d] to-[#6a3a6a] rounded-xl flex items-center justify-center">
+                        <span class="text-white text-lg">🐍</span>
+                    </div>
+                    <div>
+                        <h3 class="text-[#dbdbdb] text-xl font-semibold montserrat">Flask Development</h3>
+                        <p class="text-gray-400 text-sm manrope">Backend Mastery</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 raleway">
+                    Building robust and scalable web applications with Python Flask framework.
+                </p>
+
+                <div class="space-y-4 mb-6">
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                            <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                            RESTful APIs
+                        </h4>
+                        <p class="text-gray-500 text-sm raleway">
+                            Creating efficient and well-structured REST APIs for various projects.
+                        </p>
+                    </div>
+
+
+                    <div class="bg-gray-800/50 rounded-lg p-4">
+                        <h4 class="text-[#dbdbdb] font-medium mb-2 manrope flex items-center gap-2">
+                            <span class="w-2 h-2 bg-[#83497d] rounded-full"></span>
+                            Authentication & Security
+                        </h4>
+                        <p class="text-gray-500 text-sm raleway">
+                            Implementing secure user authentication and authorization systems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Python</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">Flask</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">SQLAlchemy</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">REST API</span>
+                    <span class="bg-gray-800 text-[#dbdbdb] px-3 py-1 rounded-full text-xs manrope">PostgreSQL</span>
+                </div>
+
+                <div
+                    class="text-center py-3 px-4 rounded-lg border border-gray-600 text-gray-500 text-sm font-medium manrope">
+                    Backend Development Focus
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <section class="min-h-[20vh] mb-8 flex items-center justify-center relative">
+        <div class="flex flex-wrap gap-4 justify-center items-center mt-8">
+            <a href="/"
+                class="bg-[#83497d] text-[#dbdbdb] rounded-lg hover:bg-[#6a3a6a] transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                ← Back to Home
+            </a>
+            <a href="/Projects & Builds"
+                class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                Projects & Builds
+            </a>
+            <a href="/Lessons"
+                class="border border-[#83497d] text-[#83497d] rounded-lg hover:bg-[#83497d] hover:text-white transition-all duration-300 py-3 px-6 text-sm font-medium manrope hover:scale-105">
+                Lessons
+            </a>
+        </div>
+    </section>
+</main>
 {% endblock %}
 </body>
+
 </html>
